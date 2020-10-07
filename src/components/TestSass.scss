@@ -1,7 +1,9 @@
+$azulDefault: #1e2a40;
+
 .header {
   width: 100%;
   padding: 8px 0 30px;
-  background: #1e2a40;
+  background: $azulDefault;
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
 
