@@ -1,19 +1,16 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
 import { Eco } from '@material-ui/icons';
 
-import actionCreators from '../redux/actions/creators';
-
-const App = () => {
-  const { count } = useSelector(state => state, () => {});
-  const dispatch = useDispatch();
-  const { COUNT } = actionCreators;
+const TestLocalStorage = () => {
+  useEffect(() => {
+    localStorage.setItem('count', 1);
+  }, []);
 
   return (
     <div
       style={{
         width: '100%',
-        padding: '8px 4px 30px',
+        padding: '8px 0 30px',
         background: '#1e2a40',
         textAlign: 'center',
         clipPath: 'polygon(0 0, 100% 0, 100% 66%, 0 100%)'
@@ -35,18 +32,17 @@ const App = () => {
           justifyContent: 'center'
         }}
       >
-        { count }
         <Eco
           style={{
             marginLeft: '5px',
-            fontSize: '13px',
+            fontSize: '15px',
             cursor: 'pointer'
           }}
-          onClick={() => dispatch(COUNT.sum())}
+          onClick={() => localStorage.setItem('count', Number(localStorage.getItem('count')) + 1)}
         />
       </p>
     </div>
   );
 }
 
-export default App;
+export default TestLocalStorage;
