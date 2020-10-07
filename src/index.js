@@ -5,12 +5,13 @@ import * as serviceWorker from './serviceWorker';
 
 import TestRedux from './components/TestRedux';
 import TestLocalStorage from './components/TestLocalStorage';
+import TestSass from './components/TestSass';
 import store from './redux/store';
 import './index.css';
 
 ReactDOM.render(
   <Provider store={store}>
-    <TestLocalStorage />
+    <TestSass />
   </Provider>,
   document.getElementById('root')
 );
