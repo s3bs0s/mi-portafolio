@@ -1,0 +1,11 @@
+$grisDefecto: #333333;
+
+.separador {
+  width: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background: $grisDefecto;
+  margin-top: 20px;
+}
+
+.derecha { clip-path: polygon(0 10px, 100% 0, 100% calc(100% - 10px), 0 100%) }
