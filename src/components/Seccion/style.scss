@@ -1,0 +1,36 @@
+$azulDefecto: #1e2a40;
+$blancoDefecto: #f0f0f0;
+$tamanioFigura: 20px;
+
+.seccion {
+  width: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+  background: $blancoDefecto;
+}
+
+.imagen {
+  background: {
+    repeat: no-repeat;
+    attachment: fixed;
+    position: center center;
+    size: cover;
+  };
+}
+.color { background: $azulDefecto }
+
+.arriba {
+  padding-top: 35px;
+  margin-top: -21px;
+}
+.abajo { padding-bottom: 35px }
+
+.arriba-izquierda { clip-path: polygon(0 $tamanioFigura, 100% 0, 100% 100%, 0 100%) }
+.arriba-derecha { clip-path: polygon(0 0, 100% $tamanioFigura, 100% 100%, 0 100%) }
+.abajo-izquierda { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 20px)) }
+.abajo-derecha { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0 100%) }
+
+.arriba-izquierda-abajo-izquierda { clip-path: polygon(0 $tamanioFigura, 100% 0, 100% 100%, 0 calc(100% - 20px)) }
+.arriba-derecha-abajo-derecha { clip-path: polygon(0 0, 100% $tamanioFigura, 100% calc(100% - 20px), 0 100%) }
+.arriba-izquierda-abajo-derecha { clip-path: polygon(0 $tamanioFigura, 100% 0, 100% calc(100% - 20px), 0 100%) }
+.arriba-derecha-abajo-izquierda { clip-path: polygon(0 0, 100% $tamanioFigura, 100% 100%, 0 calc(100% - 20px)) }

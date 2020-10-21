@@ -1,13 +1,10 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
 import { Eco } from '@material-ui/icons';
 
-import actionCreators from '../redux/actions/creators';
-
-const TestRedux = () => {
-  const { count } = useSelector(state => state, () => {});
-  const dispatch = useDispatch();
-  const { COUNT } = actionCreators;
+const PruebasLocalStorage = () => {
+  useEffect(() => {
+    localStorage.setItem('count', 1);
+  }, []);
 
   return (
     <div
@@ -35,18 +32,17 @@ const TestRedux = () => {
           justifyContent: 'center'
         }}
       >
-        { count }
         <Eco
           style={{
             marginLeft: '5px',
-            fontSize: '13px',
+            fontSize: '15px',
             cursor: 'pointer'
           }}
-          onClick={() => dispatch(COUNT.sum())}
+          onClick={() => localStorage.setItem('count', Number(localStorage.getItem('count')) + 1)}
         />
       </p>
     </div>
   );
 }
 
-export default TestRedux;
+export default PruebasLocalStorage;

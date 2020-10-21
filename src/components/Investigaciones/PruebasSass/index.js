@@ -2,10 +2,10 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Eco } from '@material-ui/icons';
 
-import actionCreators from '../redux/actions/creators';
-import './TestSass.scss';
+import actionCreators from '../../../redux/actions/creators';
+import './style.scss';
 
-const TestSass = () => {
+const PruebasSass = () => {
   const { count } = useSelector(state => state, () => {});
   const dispatch = useDispatch();
   const { COUNT } = actionCreators;
@@ -25,4 +25,4 @@ const TestSass = () => {
   );
 }
 
-export default TestSass;
+export default PruebasSass;

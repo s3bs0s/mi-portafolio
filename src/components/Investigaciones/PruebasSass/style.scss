@@ -1,0 +1,32 @@
+$azulDefault: #1e2a40;
+
+.header {
+  width: 100%;
+  padding: 8px 0 30px;
+  background: $azulDefault;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+
+  .text {
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.4s;
+
+    &:hover {
+      letter-spacing: 1pt;
+    }
+  }
+
+  .dynamic {
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      margin-left: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
