@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Seccion from '../Seccion';
+import Portada from './components/Portada';
 import base64 from '../../base64';
 import './style.scss';
 
@@ -9,11 +10,11 @@ const LandingPage = () => {
   return (
     <Fragment>
       <Seccion ladosFigura='abajo-d' tipoFondo='imagen' fondoImagen={{
-        backgroundImage: `url('${base64.portadaDifuminada}')`,
-        padding: '200px 0px'
+        backgroundImage: `url('${base64.portadaDifuminada}')`
       }}>
-        <p className='text'></p>
+        <Portada />
       </Seccion>
+
       <Seccion ladosFigura='arriba-i abajo-i'>
         <p className='text'>
           {tempString + tempString}

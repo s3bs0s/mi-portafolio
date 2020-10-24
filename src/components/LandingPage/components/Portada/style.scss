@@ -1,0 +1,33 @@
+$minSizeMobile: 400px;
+
+.portada {
+  width: 100%;
+  padding: {
+    top: 60px;
+    bottom: 60px;
+  };
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+
+    img {
+      width: 150px;
+    }
+
+    @media (max-width: $minSizeMobile) {
+      img { width: 130px }
+    }
+  }
+}
+
+@media (max-width: $minSizeMobile) {
+  .portada {
+    padding: {
+      top: 100px;
+      bottom: 100px;
+    };
+  }
+}
