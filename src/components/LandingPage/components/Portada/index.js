@@ -13,6 +13,9 @@ const Portada = () => {
       <div className='logo'>
         <img src={base64.code} alt='Logo'/>
       </div>
+      <div className='titulos'>
+        <h1>Mi portafolio</h1>
+      </div>
     </div>
   );
 }
