@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Seccion from '../Seccion';
+import base64 from '../../base64';
 import './style.scss';
 
 const LandingPage = () => {
@@ -8,8 +9,8 @@ const LandingPage = () => {
   return (
     <Fragment>
       <Seccion ladosFigura='abajo-d' tipoFondo='imagen' fondoImagen={{
-        backgroundImage: 'url("https://www.tithink.com/wp-content/uploads/2018/05/practicas-desarollo-software.jpeg")',
-        padding: '200px'
+        backgroundImage: `url('${base64.portadaDifuminada}')`,
+        padding: '200px 0px'
       }}>
         <p className='text'></p>
       </Seccion>
