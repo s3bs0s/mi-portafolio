@@ -15,6 +15,10 @@ const Portada = () => {
       </div>
       <div className='titulos'>
         <h1>Mi portafolio</h1>
+        <div className='sub-titulo'>
+          <h5>Sebastian Sossa</h5>
+          <span className='barra-escribir' style={{ background: getBarraEscribir }}/>
+        </div>
       </div>
     </div>
   );

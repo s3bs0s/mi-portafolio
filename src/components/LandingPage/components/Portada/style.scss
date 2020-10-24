@@ -34,8 +34,33 @@ $minSizeMobile: 400px;
       color: #fdfdfd;
     }
 
+    .sub-titulo {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+
+      h5 {
+        font-size: 27px;
+        color: #dbdbdb;
+      }
+
+      .barra-escribir {
+        font-size: 21px;
+        display: inline-block;
+        width: 1px;
+        height: 19px;
+        margin-left: 4px;
+      }
+    }
+
     @media (max-width: $minSizeMobile) {
       h1 { font-size: 52px }
+
+      .sub-titulo {
+        h5 { font-size: 25px }
+
+        .barra-escribir { height: 17px; }
+      }
     }
   }
 }
