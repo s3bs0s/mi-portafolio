@@ -11,12 +11,12 @@ const Portada = () => {
   return (
     <div className='portada'>
       <div className='logo'>
-        <img src={base64.code} alt='Logo'/>
+        <img src={base64.logoPng} alt='Logo'/>
       </div>
       <div className='titulos'>
-        <h1>Mi portafolio</h1>
+        <img src={base64.tituloPng} alt='Título'/>
         <div className='sub-titulo'>
-          <h5>Sebastian Sossa</h5>
+          <h1>Sebastian Sossa</h1>
           <span className='barra-escribir' style={{ background: getBarraEscribir }}/>
         </div>
       </div>
