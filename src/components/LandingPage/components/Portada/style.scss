@@ -3,8 +3,8 @@ $minSizeMobile: 400px;
 .portada {
   width: 100%;
   padding: {
-    top: 60px;
-    bottom: 60px;
+    top: 70px;
+    bottom: 70px;
   };
 
   .logo {
@@ -14,11 +14,11 @@ $minSizeMobile: 400px;
     padding-bottom: 12px;
 
     img {
-      width: 150px;
+      width: 160px;
     }
 
     @media (max-width: $minSizeMobile) {
-      img { width: 130px }
+      img { width: 140px }
     }
   }
 
@@ -29,38 +29,19 @@ $minSizeMobile: 400px;
     flex-direction: column;
     align-items: center;
     
-    img {
+    img.titulo {
       width: 400px;
     }
 
-    .sub-titulo {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-
-      h1 {
-        font-size: 27px;
-        font-weight: normal;
-        color: #c2c2c2;
-      }
-
-      .barra-escribir {
-        font-size: 21px;
-        display: inline-block;
-        width: 1px;
-        height: 19px;
-        margin-left: 4px;
-      }
+    img.sub-titulo {
+      width: 220px;
+      margin-top: -5px;
     }
 
     @media (max-width: $minSizeMobile) {
-      img { width: 300px }
+      img.titulo { width: 300px }
 
-      .sub-titulo {
-        h1 { font-size: 25px }
-
-        .barra-escribir { height: 17px; }
-      }
+      img.sub-titulo { width: 190px }
     }
   }
 }
@@ -68,8 +49,8 @@ $minSizeMobile: 400px;
 @media (max-width: $minSizeMobile) {
   .portada {
     padding: {
-      top: 100px;
-      bottom: 100px;
+      top: 120px;
+      bottom: 120px;
     };
   }
 }
