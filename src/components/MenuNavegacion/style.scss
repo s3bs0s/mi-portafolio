@@ -1,3 +1,18 @@
 .menu-navegacion {
-  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  right: 30px;
+  height: 100vh;
+
+  .menu {
+    padding: 5px;
+    height: 85%;
+    background: #4c5f80;
+  }
+
+  .invert {
+    background: #fff;
+  }
 }
